@@ -1,6 +1,17 @@
-@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body{
-    font-family: $font-heebo;
+:root{
+    --sky-blue: #328CC1;
+    --prussian-blue: #0B3C5D;
+    --gold-leaf: #D9B310;
+    --ivory-black: #1D2731;
+
+    --font-heebo: 'Heebo', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+}
+
+
+html{
+    font-family: var(--font-heebo);
 }
 

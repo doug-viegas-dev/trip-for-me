@@ -1,6 +1,6 @@
 
 
-const Home = () => {
+export const Home = () => {
     return (
         <div>
             <img src="" alt="" />
@@ -8,4 +8,3 @@ const Home = () => {
     );
 };
 
-export default Home;

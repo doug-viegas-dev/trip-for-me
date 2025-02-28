@@ -1,10 +1,9 @@
-import styles from "./styles.modules.scss"
-
-const Header = () => {
+import styles from "./styles.module.scss";
+export const Header = () => {
     return (
         <header>
   <div className={styles.logo}>
-    <img src="./logo_white.png" alt="Logo" />
+    <img src="" alt="Logo" />
   </div>
   <nav className={styles.nav_links}>
     <ul className={styles.nav_list}>
@@ -24,4 +23,3 @@ const Header = () => {
     );
 };
 
-export default Header;
