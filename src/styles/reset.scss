@@ -17,8 +17,10 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul {
     margin: 0;
+    padding: 0
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -73,4 +75,8 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+a {
+    list-style: none;
 }
