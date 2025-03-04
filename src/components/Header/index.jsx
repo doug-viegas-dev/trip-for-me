@@ -6,7 +6,7 @@ import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 export const Header = () => {
     return (
-      <header>
+      <header className="container">
       <div className={styles.logo}>
       <img src={Logo_White} alt="Logo Trip For Me Branco" />
       </div>
@@ -36,7 +36,7 @@ export const Header = () => {
       </li>
       </ul>
       <button className={styles.bt_personalizar}>
-      <a> Viagem do Seu Jeito </a>
+      <a> Viagem do seu Jeito </a>
       <div>
       <FontAwesomeIcon icon={faArrowRight} />
       </div>

@@ -1,4 +1,6 @@
-.home_section {
+@import url(../../styles/animations.scss);
+
+.top_section {
   width: 100%;
   height: 100vh;
   background-image: url("../../assets/imgs/home_background.jpg");
@@ -12,7 +14,7 @@
   > p {
     margin-top: 30px;
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 300;
   }
 
@@ -20,7 +22,90 @@
     font-weight: 800;
     font-size: 12rem;
     margin: -30px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
   }
 }
+
+.highlights_section {
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+
+  .highlights_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+    padding: 2%;
+    height: 90vh;
+    box-sizing: border-box;
+  }
+
+  .highlights_grid_item {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    max-height: 90vh;
+    box-sizing: border-box;
+  }
+
+  .highlights_grid_card {
+    height: 33%;
+    background-color: #ecc93d;
+    border-radius: 20px;
+    padding-inline: 6%;
+    padding-block: 4%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-sizing: content-box;
+    margin: 0;
+    max-height: 29%;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+
+  .highlights_grid_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    background: linear-gradient(45deg, #ecc424, #f0d97f);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: clamp(20px, 2vw, 20px);
+
+  }
+
+  .highlights_grid_title {
+    font-family: "Lato", sans-serif;
+    font-size: clamp(16px, 2vw, 1.25rem);
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 2%;
+    color: white;
+  }
+
+  .highlights_grid_description {
+    color: white;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 0.8rem;
+  }
+
+  .highlights_grid_image {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 66%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: 1s; /* Aplica a animação de entrada */
+  }
+}
+
+
 
 
