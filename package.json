@@ -1,7 +1,6 @@
 {
   "name": "trip-for-me",
   "private": true,
-  "homepage": "https://doug-viegas-dev.github.io/trip-for-me",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
