@@ -47,7 +47,9 @@
   align-items: center;
   color: white;
   font-family: var(--font-lato);
-
+  position: sticky;
+  top: 0;
+  z-index: 1;
   > p {
     margin-top: 30px;
     margin-bottom: 0;
@@ -68,6 +70,9 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
 
   .highlights_grid {
     display: grid;
@@ -76,6 +81,7 @@
     padding: 2%;
     height: 90vh;
     box-sizing: border-box;
+    
   }
 
   .highlights_grid_item {
