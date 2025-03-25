@@ -1,0 +1,23 @@
+
+.slick-track {
+  margin-top: 40px;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  top: 50px;
+  left: 0;
+  gap: 35px;
+  flex-direction: row;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--prussian-blue) !important; /* Cor dos dots ativos */
+  opacity: 1 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    display: block !important;
+  }
+}

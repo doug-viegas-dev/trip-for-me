@@ -1,0 +1,121 @@
+/* Estilos específicos para os slides de cada imagem (ID vem antes das classes) */
+#paris_london {
+  background-image: url("../../assets/imgs/Iconics/londres.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#buenos_aires {
+  background-image: url("../../assets/imgs/Iconics/buenos_aires.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#atacama {
+  background-image: url("../../assets/imgs/Iconics/atacama.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilos gerais do carrossel */
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  padding: 0;
+  margin-top: 15%;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100vh;
+}
+
+.carouselSlider {
+  width: 70%;
+  border-radius: 20px;
+}
+
+.carouselSlide {
+  height: 70vh;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding-inline: 6%;
+  padding-block: 4%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    z-index: 1;
+    border-radius: 20px;
+  }
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    scale: 1.02;
+    transition: box-shadow 0.3s ease;
+}
+}
+
+.carouselCaption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carouselCaption h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.carouselCaption p {
+  margin: 5px 0 0;
+}
+
+/* Botões de navegação */
+.carouselBtnPrev,
+.carouselBtnNext {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: none;
+  color: var(--prussian-blue);
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carouselBtnPrev {
+  left: 40px;
+}
+
+.carouselBtnNext {
+  right: 30px;
+}
+
+.slick-slide {
+  opacity: 0.5; /* Slides inativos ficam com opacidade reduzida */
+}
+
+.slick-active {
+  opacity: 1; /* Slide ativo tem opacidade normal */
+}
