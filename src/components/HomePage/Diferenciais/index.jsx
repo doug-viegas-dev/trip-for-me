@@ -5,11 +5,12 @@ import img_diferenciais_1 from "../../../assets/imgs/Diferenciais/diferenciais_1
 import img_diferenciais_2 from "../../../assets/imgs/Diferenciais/diferenciais_2.jpg";
 import img_diferenciais_3 from "../../../assets/imgs/Diferenciais/diferenciais_3.jpg";
 
-export const Diferenciais = () => {
+export const Diferenciais = () => 
   <section className={`${styles.diferenciais_section} container`}>
     <div className="section_title">
-      <h1 className="section_word">EXPERIÊNCIA</h1>
-      <h2 className="section_phrase">Nossos Diferenciais</h2>
+      <h1 className="section_word">EXPERIÊNCIA
+      <p className="section_phrase">Nossos Diferenciais</p>
+      </h1>
       <p className="section_heading">
         Na <strong>Trip For Me</strong> nós tornamos a sua viagem dos sonhos
         uma realidade com um serviço personalizado, ótimos custo benefício e
@@ -72,4 +73,3 @@ export const Diferenciais = () => {
       </div>
     </div>
   </section>
-};

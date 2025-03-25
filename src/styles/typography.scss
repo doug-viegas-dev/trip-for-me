@@ -16,23 +16,21 @@
     letter-spacing: 2px;
     color: var(--light-grey);
     margin-bottom: 0.5rem;
-    opacity: 0.5;
+    position: relative;
   }
 
 .section_phrase {
     width: 100%;
     font-family: "Lato", Sans-serif;
     /* Tamanho responsivo: mínimo 20px, ideal 4vw, máximo 32px */
-    font-size: clamp(17px, 4vw, 32px);
+    font-size: 2rem;
     font-weight: 600;
     color: var(--prussian-blue);
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
-    transform: translate(
-      clamp(-60%, -10vw, -50%),
-      clamp(-120%, -20vw, -100%)
-    );
+    transform: translate(-50%, -30%);
+    letter-spacing: 0;
   }
 
 .section_heading {

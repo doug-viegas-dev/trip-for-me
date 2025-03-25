@@ -1,18 +1,18 @@
 /* Estilos específicos para os slides de cada imagem (ID vem antes das classes) */
 #paris_london {
-  background-image: url("../../assets/imgs/Iconics/londres.jpg");
+  background-image: url("../../../assets/imgs/Iconics/londres.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #buenos_aires {
-  background-image: url("../../assets/imgs/Iconics/buenos_aires.jpg");
+  background-image: url("../../../assets/imgs/Iconics/buenos_aires.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #atacama {
-  background-image: url("../../assets/imgs/Iconics/atacama.jpg");
+  background-image: url("../../../assets/imgs/Iconics/atacama.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -25,10 +25,10 @@
   position: relative;
   width: 80%;
   padding: 0;
-  margin-top: 15%;
   overflow: hidden;
   border-radius: 10px;
   height: 100vh;
+  justify-content: center;
 }
 
 .carouselSlider {
@@ -93,7 +93,7 @@
 .carouselBtnPrev,
 .carouselBtnNext {
   position: absolute;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   background: none;
   color: var(--prussian-blue);

@@ -10,7 +10,7 @@ header {
   padding-block: 1rem;
   box-sizing: border-box;
   gap: 3%;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 999;
 }
@@ -143,6 +143,7 @@ header {
 }
 
 .scrolled {
+  position: fixed;
   background: white;
   box-shadow: 0 4px 2px -2px gray;
   height: 100px;

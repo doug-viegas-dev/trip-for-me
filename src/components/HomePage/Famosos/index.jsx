@@ -6,8 +6,10 @@ import CarrosselFamosos from "../../Carrosséis/CarrosselFamosos";
 export const Famosos = () => (
   <section className={`${styles.carrossel_section} container`}>
     <div className="section_title">
-      <h1 className="section_word">FAMOSOS</h1>
+      <h1 className="section_word">FAMOSOS
       <p className="section_phrase">Destinos em Destaque</p>
+      </h1>
+      
       <p className="section_heading">
         Experiências planejadas nos mínimos detalhes para você conhecer os
         destinos mais famosos, inspiradores e deslumbrantes do mundo.
