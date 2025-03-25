@@ -1,0 +1,24 @@
+.topo_home{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../assets/imgs/Backgrounds/home_background.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--font-lato);
+    > p {
+      margin-top: 30px;
+      margin-bottom: 0;
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+  
+    > strong {
+      font-weight: 800;
+      font-size: 12rem;
+      margin: -30px;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
