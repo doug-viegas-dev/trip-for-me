@@ -33,7 +33,7 @@ const CarrosselFamosos = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     centerPadding: "0px",
     centerMode: true,

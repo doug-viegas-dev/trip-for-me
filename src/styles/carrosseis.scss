@@ -1,0 +1,48 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+.slick-track {
+  margin-top: 40px;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  top: 50px;
+  left: 0;
+  gap: 35px;
+  flex-direction: row;
+  min-height: 310px;
+}
+
+.slick-slide {
+  min-height: 300px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--prussian-blue) !important; /* Cor dos dots ativos */
+  opacity: 1 !important;
+}
+
+.slick-prev{
+  left: -5% !important;
+  z-index: 1;
+}
+
+.slick-next{
+  right: -5% !important;
+  z-index: 1;
+}
+
+.slick-prev::before, .slick-next::before{
+  font-family: 'Font Awesome 6 Free' !important;
+  font-size: 2rem !important;
+  line-height: 1;
+  color: var(--prussian-blue) !important;
+}
+
+.slick-prev::before{
+  content: "\f053" !important;
+  font-weight: 900;
+}
+
+.slick-next::before{
+  content: "\f054" !important;
+  font-weight: 900;
+}

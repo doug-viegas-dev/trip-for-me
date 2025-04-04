@@ -6,6 +6,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
+
 export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
 

@@ -1,20 +1,25 @@
 import styles from "./styles.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRoute, faMoneyBillTrendUp, faHeadset } from "@fortawesome/free-solid-svg-icons";
+import {
+  faRoute,
+  faMoneyBillTrendUp,
+  faHeadset,
+} from "@fortawesome/free-solid-svg-icons";
 import img_diferenciais_1 from "../../../assets/imgs/Diferenciais/diferenciais_1.jpg";
 import img_diferenciais_2 from "../../../assets/imgs/Diferenciais/diferenciais_2.jpg";
 import img_diferenciais_3 from "../../../assets/imgs/Diferenciais/diferenciais_3.jpg";
 
-export const Diferenciais = () => 
+export const Diferenciais = () => (
   <section className={`${styles.diferenciais_section} container`}>
-    <div className="section_title">
-      <h1 className="section_word">EXPERIÊNCIA
-      <p className="section_phrase">Nossos Diferenciais</p>
+    <div className="secao_titulo">
+      <h1 className="secao_palavra">
+        Nossos Diferenciais
+        <p className="secao_frase"><span className="palavra_destaque">Vantagens</span> Que Oferecemos</p>
       </h1>
-      <p className="section_heading">
-        Na <strong>Trip For Me</strong> nós tornamos a sua viagem dos sonhos
-        uma realidade com um serviço personalizado, ótimos custo benefício e
-        uma experiência inesquecível.
+      <p className="secao_heading">
+        Na <strong>Trip For Me</strong> nós tornamos a sua viagem dos sonhos uma
+        realidade com um serviço personalizado, ótimos custo benefício e uma
+        experiência inesquecível.
       </p>
     </div>
     <div className={styles.diferenciais_grid}>
@@ -27,8 +32,8 @@ export const Diferenciais = () =>
             Roteiros Feitos para Você
           </h3>
           <p className={styles.diferenciais_grid_descricao}>
-            Criamos experiências feitas para do seu jeito, com dicas locais
-            e detalhes únicos.
+            Criamos experiências feitas para do seu jeito, com dicas locais e
+            detalhes únicos.
           </p>
         </div>
         <img
@@ -73,3 +78,4 @@ export const Diferenciais = () =>
       </div>
     </div>
   </section>
+);

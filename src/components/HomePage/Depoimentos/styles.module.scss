@@ -1,0 +1,153 @@
+.depoimentos_section {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  background-color: white;
+  padding-block: 100px;
+  gap: 30px;
+}
+
+.div_depoimentos {
+  width: 100%;
+  align-items: center;
+}
+.depoimentoContainer {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 20px;
+}
+
+.texto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 20px ;
+}
+
+.quote_1,
+.quote_2 {
+  position: absolute;
+  width: 50%;
+}
+
+.quote_1 {
+  left: 0px;
+  top: 0;
+}
+
+.quote_2 {
+  right: 0px;
+  bottom: 0;
+}
+
+.testemunho {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--prussian-blue);
+  font-weight: 200;
+  font-style: italic;
+}
+
+.nome {
+  font-family: var(--font-lato);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: -5px;
+  color: var(--light-grey);
+  text-align: center;
+}
+
+.local {
+  font-family: var(--font-pacifico);
+  font-size: 18px;
+  color: var(--gold-leaf);
+  text-align: center;
+}
+
+.dados {
+  flex: 0 0 40%;
+  max-height: 100%;
+  background-color: var(--prussian-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+
+  .img_circulo_externo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px; // espaçamento do anel externo
+    border: 6px solid var(--gold-leaf); // cor e espessura do aro externo
+    border-radius: 50%;
+    background-color: var(--prussian-blue); // se quiser fundo entre bordas
+    width: 150px;
+    height: 150px;
+  }
+
+  .img_circulo_interno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--gold-leaf); // aro interno mais fino
+    border-radius: 50%;
+    background-color: none;
+    width: 130px;
+    height: 130px;
+  }
+
+  .img_depoimento {
+    width: 100%;
+    height: auto;
+    border-radius: 500px;
+  }
+}
+.carouselBtnPrev,
+.carouselBtnNext {
+  position: absolute;
+  background: none;
+  color: var(--prussian-blue);
+  border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carouselBtnPrev {
+  left: 10%;
+}
+
+.carouselBtnNext {
+  right: 10%;
+}
+
+@media (max-width: 768px) {
+  .depoimentoContainer {
+    flex-direction: column;
+  }
+
+  .imagem {
+    order: -1;
+    height: 200px;
+  }
+}

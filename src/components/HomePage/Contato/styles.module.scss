@@ -1,0 +1,34 @@
+.contato_section {
+  display: flex;
+  flex-direction: row;
+  height: 150vh;
+  background-color: #f8faff;
+  padding-block: 50px;
+  background-image: url(../../../assets/imgs/Backgrounds/mundi.png);
+  background-repeat: no-repeat;
+  background-size: 80% 50%;
+  background-position: bottom; 
+}
+
+.formulario_contato_home {
+  width: 80%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: fit-content;
+
+  .formulario_contato_home_dupla {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+
+    .formulario_contato_home_metade {
+      width: 50%;
+    }
+  }
+}
