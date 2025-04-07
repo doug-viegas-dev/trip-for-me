@@ -1,3 +1,7 @@
+button {
+  cursor: pointer;
+}
+
 .hover-button {
   display: flex;
   align-items: center;
@@ -61,3 +65,32 @@
     }
   }
 }
+
+.button_form_full {
+  background-color: var(--prussian-blue);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px;
+  width: 100%;
+}
+
+.button_form_metade {
+  background-color: var(--prussian-blue);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px;
+  width: 50%;
+}
+
+.botoes_navegacao_dupla {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+} 

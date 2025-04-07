@@ -3,6 +3,7 @@ import { Diferenciais } from "../../components/HomePage/Diferenciais";
 import { Famosos } from "../../components/HomePage/Famosos";
 import { Depoimentos } from "../../components/HomePage/Depoimentos";
 import { Contato } from "../../components/HomePage/Contato";
+import { Footer } from "../../components/Footer";
 
 
 export const Home = () => {
@@ -13,6 +14,7 @@ export const Home = () => {
       <Famosos />
       <Depoimentos/>
       <Contato/>
+      <Footer/>
     </>
   );
 };
