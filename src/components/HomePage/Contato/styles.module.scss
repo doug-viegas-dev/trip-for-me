@@ -7,7 +7,7 @@
   background-image: url(../../../assets/imgs/Backgrounds/mundi.png);
   background-repeat: no-repeat;
   background-size: 80% 50%;
-  background-position: bottom; 
+  background-position: bottom;
 }
 
 .formulario_contato_home {
@@ -23,7 +23,7 @@
   .formulario_contato_home_dupla {
     display: flex;
     flex-direction: row;
-    gap: 20px;;
+    gap: 20px;
     width: 100%;
     justify-content: space-between;
 
@@ -47,7 +47,7 @@
   z-index: 2;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 0;
@@ -57,10 +57,6 @@
     z-index: 0;
     transition: background-color 0.3s;
   }
-
-  
-
-
 
   .botao_passo {
     background-color: var(--gold-leaf);
@@ -77,14 +73,12 @@
       background-color: var(--ivory-black);
       color: white;
     }
-  }  
+  }
 
   .ativo {
     background-color: var(--ivory-black);
     color: white;
   }
-
-
 }
 
 .form_contato_opcoes {
@@ -107,4 +101,9 @@
     gap: 10px;
     width: 30%;
   }
+}
+
+.foto_form {
+  position: absolute;
+  height: 70%;
 }

@@ -15,7 +15,7 @@ export const Depoimentos = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     arrows: true,
     centerMode: true,
